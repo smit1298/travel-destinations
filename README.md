@@ -37,7 +37,7 @@ Use the filter buttons (All, Visited and not visited) at the top of the list to 
 
 
 ## Deployment Link
-https://travel-destination-ps9bc2j0q-smit1298s-projects.vercel.app/
+https://travel-destination-two.vercel.app/
 
 ## Future Implementation
 
