@@ -41,7 +41,9 @@ function App() {
 
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-4">Travel Destinations</h1>
+      <h1 className="text-xl md:text-2xl font-bold mb-4">
+        Travel Destinations
+      </h1>
       <DestinationForm addDestination={addDestination} />
       <div className="flex flex-col items-center xl:flex-row  w-full space-y-3 xl:space-y-0 mt-4">
         <button

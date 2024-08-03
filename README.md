@@ -1,10 +1,9 @@
 # Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Travel Destinations Tracker is a web application that allows users to manage a list of travel destinations. Users can add new destinations, mark destinations as visited, filter the list of destinations, and remove destinations. The app is built with React and styled using Tailwind CSS, and it uses localStorage to persist data across sessions.
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you can run to start the application:
 
 ### `npm start`
 
@@ -14,57 +13,39 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Instructions on How to Use the  App
 
-### `npm run build`
+## Add Destination:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Fill in the form with the destination's name, country, and a brief description.
+Click the "Add Destination" button to add it to the list.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Remove Destination:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Click the "Remove" button to remove a destination that has been added in the list.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Mark as Visited:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Click the "Mark as Visited" button next to a destination to mark it as visited. Click the same button again to mark it as not visited.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Filter Destinations:
 
-## Learn More
+Use the filter buttons (All, Visited and not visited) at the top of the list to switch between viewing all destinations, only visited destinations, or only non-visited destinations.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Deployment Link
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Future Implementation
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Search Functionality: Implement a search bar to filter destinations by name or country.
+2. Tour History Verification: Verify if a tour exist before adding 
+2. Edit Destination: Allow users to edit the details of an existing destination.
+3. Reason for Visit: Add an input field to give details about reasons for the visit so as to help other users with same intention in case our customer care representative are reached.
+4. User Authentication: Add user authentication to save destinations to a user-specific account.
+5. Backend Integration: Integrate with a backend service to store destinations in a database.
+6. Enhanced UI/UX: Improve the user interface and user experience with more advanced styling and animations.
+7. Sorting Options: Add options to sort destinations alphabetically or by the date they were added.
