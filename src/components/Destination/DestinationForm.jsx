@@ -20,7 +20,12 @@ const DestinationForm = ({ addDestination }) => {
     <Box
       component="form"
       onSubmit={handleSubmit}
-      sx={{ p: 2, border: "2px solid", borderRadius: "10px", borderColor: "#f3f4f6"}}
+      sx={{
+        p: 2,
+        border: "2px solid",
+        borderRadius: "10px",
+        borderColor: "#f3f4f6"
+      }}
     >
       <Typography variant="h6" gutterBottom>
         Add New Destination
@@ -57,7 +62,8 @@ const DestinationForm = ({ addDestination }) => {
       <Button
         type="submit"
         variant="contained"
-        color="primary"
+        color="success"
+        className=""
         disabled={!isFormValid}
       >
         Add Destination
