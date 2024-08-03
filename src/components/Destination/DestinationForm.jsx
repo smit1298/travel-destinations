@@ -1,9 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
+import { TextField, Button, Box, Typography } from "@mui/material";
 
 const DestinationForm = ({ addDestination }) => {
   const [name, setName] = useState("");
   const [country, setCountry] = useState("");
   const [description, setDescription] = useState("");
+
   const handleSubmit = (e) => {
     e.preventDefault();
     addDestination({ name, country, description, visited: false });
@@ -12,42 +14,56 @@ const DestinationForm = ({ addDestination }) => {
     setDescription("");
   };
 
+  const isFormValid = name && country && description;
+
   return (
-    <form onSubmit={handleSubmit} className="p-4 border"> 
-      <div className="mb-2">
-        <label className="block">Name</label>
-        <input
-          type="text"
+    <Box
+      component="form"
+      onSubmit={handleSubmit}
+      sx={{ p: 2 }}
+    >
+      <Typography variant="h6" gutterBottom>
+        Add New Destination
+      </Typography>
+      <Box sx={{ mb: 2 }}>
+        <TextField
+          label="Name"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="border p-1 w-full"
+          fullWidth
           required
         />
-      </div>
-      <div className="mb-2">
-        <label className="block">Country</label>
-        <input
-          type="text"
+      </Box>
+      <Box sx={{ mb: 2 }}>
+        <TextField
+          label="Country"
           value={country}
           onChange={(e) => setCountry(e.target.value)}
-          className="border p-1 w-full"
+          fullWidth
           required
         />
-      </div>
-      <div className="mb-2">
-        <label className="block">Description</label>
-        <textarea
+      </Box>
+      <Box sx={{ mb: 2 }}>
+        <TextField
+          label="Description"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
-          className="border p-1 w-full"
+          multiline
+          rows={4}
+          fullWidth
           required
-        ></textarea>
-      </div>
-      <button type="submit" className="bg-green-300 rounded-md text-white p-2">
+        />
+      </Box>
+      <Button
+        type="submit"
+        variant="contained"
+        color="primary"
+        disabled={!isFormValid}
+      >
         Add Destination
-      </button>
-    </form>
+      </Button>
+    </Box>
   );
 };
 
-export default DestinationForm
+export default DestinationForm;
